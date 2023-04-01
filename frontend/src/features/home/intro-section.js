@@ -11,7 +11,15 @@ export default function IntroSection() {
   return (
     <>
       <section class="text-gray-600 body-font mb-4">
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-1 mb-8 mx-auto">
+          <div class="flex items-center justify-center flex-col ">
+            <img
+              class="border-4 border-primary rounded-full lg:w-24 md:w-3/6 w-5/6 mb-10 object-cover object-center"
+              alt="accent-hero"
+              src="http://bit.ly/3YPNSDd"
+            />
+          </div>
+
           <div class="flex flex-col text-center w-full mb-20">
             <h2 class="text-sm text-primary uppercase tracking-widest font-medium title-font mb-1">
               finding mediums in a world full of extremes

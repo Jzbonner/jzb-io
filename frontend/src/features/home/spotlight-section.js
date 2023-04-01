@@ -3,24 +3,26 @@
 export default function SpotlightSection() {
   return (
     <>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex flex-col text-right w-full mb-20">
+      <section class="text-tertiary body-font">
+        <div class="container px-5 pb-24 mx-auto flex flex-wrap">
+          <div class="flex flex-col text-right w-full">
             <h2 class="text-sm text-tertiary uppercase font-medium title-font mb-1">
-              What have I built? 
+              What have I built?
             </h2>
             <h1 class="sm:text-2xl text-xl font-medium title-font text-primary drop-shadow-md">
               Portfolio Spotlight
             </h1>
           </div>
-          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+
+          {/**portfolio spotlight: 1  */}
+          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg mt-2 sm:mt-0">
             <img
               class="object-cover object-center w-full h-full"
-              src="https://dummyimage.com/600x300"
-              alt="stats"
+              src="https://bit.ly/3K1IhV8"
+              alt="ajc-mockups"
             />
           </div>
-          <div class="bg-secondary rounded-lg flex flex-wrap -mx-8 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+          <div class="bg-secondary rounded-lg flex flex-wrap -mx-6 mt-auto mb-auto pl-8 lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
             <div class="w-full sm:p-4 px-4 mb-6">
               <h1 class="title-font font-medium text-xl mb-2 text-gray-900">
                 Moon hashtag pop-up try-hard offal truffaut
@@ -51,13 +53,46 @@ export default function SpotlightSection() {
               <p class="leading-relaxed">Products</p>
             </div>
           </div>
-          {/* <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+
+          {/**portfolio spotlight: 2 */}
+          <div class="bg-secondary rounded-lg flex flex-wrap text-right -mx-6 mt-24 mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+            <div class="w-full sm:p-4 px-4 mb-6">
+              <h1 class="title-font font-medium text-xl mb-2 text-gray-900">
+                Moon hashtag pop-up try-hard offal truffaut
+              </h1>
+              <div class="leading-relaxed">
+                Pour-over craft beer pug drinking vinegar live-edge gastropub,
+                keytar neutra sustainable fingerstache kickstarter.
+              </div>
+            </div>
+            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+              <h2 class="title-font font-medium text-3xl text-gray-900">
+                2.7K
+              </h2>
+              <p class="leading-relaxed">Users</p>
+            </div>
+            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+              <h2 class="title-font font-medium text-3xl text-gray-900">
+                1.8K
+              </h2>
+              <p class="leading-relaxed">Subscribes</p>
+            </div>
+            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+              <h2 class="title-font font-medium text-3xl text-gray-900">35</h2>
+              <p class="leading-relaxed">Downloads</p>
+            </div>
+            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+              <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
+              <p class="leading-relaxed">Products</p>
+            </div>
+          </div>
+          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg mt-2 ml-12 sm:mt-0">
             <img
               class="object-cover object-center w-full h-full"
-              src="https://dummyimage.com/600x300"
-              alt="stats"
+              src="http://bit.ly/3KeZrzN"
+              alt="repli-mockups"
             />
-          </div> */}
+          </div>
         </div>
       </section>
     </>

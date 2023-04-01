@@ -1,13 +1,23 @@
-/**TODO: redesign the look of the storyboard section */
-/**TODO: swap out the SVGs for react-feather icons */
-/**TODO: swap out the large graphic for four smaller graphic squares  */
-
 import { Printer, Home, Box, Layers, User } from 'react-feather';
+
+const iconData = {
+  dev: ['react-original', 'nextjs-original', 'nodejs-plain', 'graphql-plain'],
+  design: ['figma-plain', 'tailwindcss-plain', 'canva-original'],
+  sdlc: ['jest-plain', 'heroku-original', 'linux-plain'],
+  db: ['postgresql-plain', 'mysql-plain', 'go-original-wordmark'],
+  web: [
+    'github-original',
+    'bitbucket-original',
+    'docker-plain',
+    'digitalocean-plain',
+  ],
+  proj: ['jira-plain', 'slack-plain', 'confluence-original'],
+};
 
 export default function ServicesSection() {
   return (
     <>
-      <section class="text-gray-600 body-font border-t-2">
+      <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="flex flex-col text-left w-full mb-20">
             <h2 class="text-sm text-tertiary uppercase font-medium title-font mb-1">
@@ -18,6 +28,7 @@ export default function ServicesSection() {
             </h1>
           </div>
           <div class="flex flex-wrap w-full">
+            {/* timelineSection: experience breakdown */}
             <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
               <div class="flex relative pb-12">
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
@@ -57,8 +68,9 @@ export default function ServicesSection() {
                     Front End Engineer
                   </h2>
                   <p class="leading-relaxed">
-                    Responsible for client side functinoality, and handling bug
-                    issues and fixes with a Headless Wordpress CMS backend.
+                    Developed integrated static and dynamic web applications for
+                    multifamily residence community organizations using PHP,
+                    AWS, Docker, and Front-End technologies.
                   </p>
                 </div>
               </div>
@@ -77,9 +89,10 @@ export default function ServicesSection() {
                     Software Support Specialist
                   </h2>
                   <p class="leading-relaxed">
-                    Provided debugging support, test automation and Coloring
-                    book nar whal glossier master cleanse umami. Salvia +1
-                    master cleanse blog taiyaki.
+                    Provided technical assistance, debugging support, and test
+                    automation for a proprietary software solution for clients
+                    in the printing and embroidery industry using Ruby on Rails
+                    and MySQL.
                   </p>
                 </div>
               </div>
@@ -98,8 +111,9 @@ export default function ServicesSection() {
                     Information Technology Technician
                   </h2>
                   <p class="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
+                    Worked with department faculty to develop WordPress admin
+                    panels and WordPress websites using custom HTML, CSS and
+                    jQuery components.
                   </p>
                 </div>
               </div>
@@ -115,101 +129,158 @@ export default function ServicesSection() {
                     Junior/Senior Intern (Fellowship)
                   </h2>
                   <p class="leading-relaxed">
-                    Pitchfork ugh tattooed scenester echo park gastropub
-                    whatever cold-pressed retro.
+                    Shadowed Mechanical and Material Engineers on projects that
+                    required developing cross platform IT and Network Security
+                    solutions using Unix/Linux shell scripting.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
+            {/* cardSection: skillset breakdown */}
+            <div class="mt-8 lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
               <div class="flex flex-wrap -m-4 text-center">
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                      <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                    </svg>
-                    <h2 class="title-font font-medium text-3xl text-gray-900">
-                      2.7K
+                <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                    <img
+                      class="w-12 h-12 mb-3 inline-block"
+                      src="https://bit.ly/3ldTCJj"
+                    />
+                    <h2 class="title-font font-medium text-xl uppercase text-tertiary">
+                      Devkit
                     </h2>
-                    <p class="leading-relaxed">Downloads</p>
+                    <p class="leading-relaxed text-primary">programming</p>
+                    <div class="flex flex-items justify-center mt-4 p-2">
+                      {iconData.dev &&
+                        iconData.dev.map((icon) => {
+                          return (
+                            <i
+                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              style={{ fontSize: 30 }}
+                            ></i>
+                          );
+                        })}
+                    </div>
                   </div>
                 </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
-                      <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-                    </svg>
-                    <h2 class="title-font font-medium text-3xl text-gray-900">
-                      1.3K
+                <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                    <img
+                      class="w-12 h-12 mb-3 inline-block"
+                      src="https://bit.ly/3JkMR0d"
+                    />
+                    <h2 class="title-font font-medium text-xl text-tertiary">
+                      DBs
                     </h2>
-                    <p class="leading-relaxed">Users</p>
+                    <p class="leading-relaxed text-primary">database tooling</p>
+                    <div class="flex flex-items justify-center mt-4 p-2">
+                      {iconData.db &&
+                        iconData.db.map((icon) => {
+                          return (
+                            <i
+                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              style={{ fontSize: 30 }}
+                            ></i>
+                          );
+                        })}
+                    </div>
                   </div>
                 </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-                      <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
-                    </svg>
-                    <h2 class="title-font font-medium text-3xl text-gray-900">
-                      74
+                <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                    <img
+                      class="w-12 h-12 mb-3 inline-block"
+                      src="https://bit.ly/3LtTBeH"
+                    />
+                    <h2 class="title-font font-medium uppercase text-xl text-tertiary">
+                      Design
                     </h2>
-                    <p class="leading-relaxed">Files</p>
+                    <p class="leading-relaxed text-primary">ui/ux</p>
+                    <div class="flex flex-items justify-center mt-4 p-2">
+                      {iconData.design &&
+                        iconData.design.map((icon) => {
+                          return (
+                            <i
+                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              style={{ fontSize: 30 }}
+                            ></i>
+                          );
+                        })}
+                    </div>
                   </div>
                 </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                    <h2 class="title-font font-medium text-3xl text-gray-900">
-                      46
+                <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                    <img
+                      class="w-12 h-12 mb-3 inline-block"
+                      src="https://bit.ly/3JHTH07"
+                    />
+                    <h2 class="title-font font-medium uppercase text-xl text-tertiary">
+                      Web
                     </h2>
-                    <p class="leading-relaxed">Places</p>
+                    <p class="leading-relaxed text-primary">cloud tooling</p>
+                    <div class="flex flex-items justify-center mt-4 p-2">
+                      {iconData.web &&
+                        iconData.web.map((icon) => {
+                          return (
+                            <i
+                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              style={{ fontSize: 30 }}
+                            ></i>
+                          );
+                        })}
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                    <img
+                      class="w-12 h-12 mb-3 inline-block"
+                      src="https://bit.ly/3ZRzI5D"
+                    />
+                    <h2 class="title-font font-medium uppercase text-xl text-tertiary">
+                      SDLC
+                    </h2>
+                    <p class="leading-relaxed text-primary">lifecycle</p>
+                    <div class="flex flex-items justify-center mt-4 p-2">
+                      {iconData.sdlc &&
+                        iconData.sdlc.map((icon) => {
+                          return (
+                            <i
+                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              style={{ fontSize: 30 }}
+                            ></i>
+                          );
+                        })}
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                    <img
+                      class="w-12 h-12 mb-3 inline-block"
+                      src="http://bit.ly/3LsU5BW"
+                    />
+                    <h2 class="title-font font-medium uppercase text-xl text-tertiary">
+                      BI
+                    </h2>
+                    <p class="leading-relaxed text-primary">
+                      product management
+                    </p>
+                    <div class="flex flex-items justify-center mt-4 p-2">
+                      {iconData.proj &&
+                        iconData.proj.map((icon) => {
+                          return (
+                            <i
+                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              style={{ fontSize: 30 }}
+                            ></i>
+                          );
+                        })}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            {/* <img
-              class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-              src="https://dummyimage.com/1200x500"
-              alt="step"
-            /> */}
           </div>
         </div>
       </section>
