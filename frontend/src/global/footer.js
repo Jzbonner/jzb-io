@@ -1,4 +1,4 @@
-import { GitHub, Twitter, Figma, Dribbble } from 'react-feather';
+import { GitHub, Twitter, Figma, Dribbble, Linkedin } from 'react-feather';
 export default function Footer() {
   return (
     <footer class="bg-footer">
@@ -16,9 +16,12 @@ export default function Footer() {
           <a href="#" class="text-gray-400 hover:text-gray-500">
             <GitHub />
           </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <Linkedin />
+          </a>
         </div>
         <p class="mt-8 text-base leading-6 text-center text-gray-400">
-          checkout my design resources
+          checkout my design & dev resources
         </p>
         <p class="mt-6 pb-8 text-sm text-gray-400 text-right">
           © 2023 | Jarrett Bonner

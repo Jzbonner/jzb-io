@@ -1,10 +1,25 @@
+// TODO: rebase this component and try and compoenent size to efficient levels
+
 import { Printer, Home, Box, Layers, User } from 'react-feather';
 
 const iconData = {
-  dev: ['react-original', 'nextjs-original', 'nodejs-plain', 'graphql-plain'],
+  dev: [
+    'react-original',
+    'nextjs-original',
+    'nodejs-plain',
+    'graphql-plain',
+    'php-plain',
+    'laravel-plain-wordmark',
+    'wordpress-plain',
+  ],
   design: ['figma-plain', 'tailwindcss-plain', 'canva-original'],
   sdlc: ['jest-plain', 'heroku-original', 'linux-plain'],
-  db: ['postgresql-plain', 'mysql-plain', 'go-original-wordmark'],
+  db: [
+    'postgresql-plain',
+    'mysql-plain',
+    'go-original-wordmark',
+    'nginx-original',
+  ],
   web: [
     'github-original',
     'bitbucket-original',
@@ -18,7 +33,7 @@ export default function ServicesSection() {
   return (
     <>
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="container px-5 mt-24 mb-2 flex flex-wrap">
           <div class="flex flex-col text-left w-full mb-20">
             <h2 class="text-sm text-tertiary uppercase font-medium title-font mb-1">
               What have I been a part of?
@@ -137,7 +152,7 @@ export default function ServicesSection() {
               </div>
             </div>
             {/* cardSection: skillset breakdown */}
-            <div class="mt-8 lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
+            <div class="mt-16 lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
               <div class="flex flex-wrap -m-4 text-center">
                 <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
                   <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
@@ -148,13 +163,12 @@ export default function ServicesSection() {
                     <h2 class="title-font font-medium text-xl uppercase text-tertiary">
                       Devkit
                     </h2>
-                    <p class="leading-relaxed text-primary">programming</p>
                     <div class="flex flex-items justify-center mt-4 p-2">
                       {iconData.dev &&
                         iconData.dev.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -171,13 +185,12 @@ export default function ServicesSection() {
                     <h2 class="title-font font-medium text-xl text-tertiary">
                       DBs
                     </h2>
-                    <p class="leading-relaxed text-primary">database tooling</p>
                     <div class="flex flex-items justify-center mt-4 p-2">
                       {iconData.db &&
                         iconData.db.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -194,13 +207,12 @@ export default function ServicesSection() {
                     <h2 class="title-font font-medium uppercase text-xl text-tertiary">
                       Design
                     </h2>
-                    <p class="leading-relaxed text-primary">ui/ux</p>
                     <div class="flex flex-items justify-center mt-4 p-2">
                       {iconData.design &&
                         iconData.design.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -217,13 +229,12 @@ export default function ServicesSection() {
                     <h2 class="title-font font-medium uppercase text-xl text-tertiary">
                       Web
                     </h2>
-                    <p class="leading-relaxed text-primary">cloud tooling</p>
                     <div class="flex flex-items justify-center mt-4 p-2">
                       {iconData.web &&
                         iconData.web.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -240,13 +251,12 @@ export default function ServicesSection() {
                     <h2 class="title-font font-medium uppercase text-xl text-tertiary">
                       SDLC
                     </h2>
-                    <p class="leading-relaxed text-primary">lifecycle</p>
                     <div class="flex flex-items justify-center mt-4 p-2">
                       {iconData.sdlc &&
                         iconData.sdlc.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -263,15 +273,12 @@ export default function ServicesSection() {
                     <h2 class="title-font font-medium uppercase text-xl text-tertiary">
                       BI
                     </h2>
-                    <p class="leading-relaxed text-primary">
-                      product management
-                    </p>
                     <div class="flex flex-items justify-center mt-4 p-2">
                       {iconData.proj &&
                         iconData.proj.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-secondary rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );

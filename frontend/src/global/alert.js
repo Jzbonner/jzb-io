@@ -5,7 +5,7 @@
 
 import Container from './container';
 import cn from 'classnames';
-import { GitHub, Twitter, Linkedin } from 'react-feather';
+import { Inbox } from 'react-feather';
 import { GIT_PROFILE } from '../../lib/constants';
 
 export default function Alert({ preview }) {
@@ -32,36 +32,10 @@ export default function Alert({ preview }) {
           ) : (
             <>
               <div className="flex">
-                <p className="font-semibold text-primary bg-secondary rounded-md mt-1 p-1 ml-1">
-                  connect with me{' '}
+                <Inbox class="rounded-full border-2 border-accent" size={20} />
+                <p class="text-sm text-primary tracking-tighter font-semibold ml-2">
+                  jarrett.bonner@gmail.com
                 </p>
-                <a
-                  href={`https://github.com/${GIT_PROFILE}`}
-                  className="underline hover:text-accent duration-200 transition-colors"
-                >
-                  <GitHub
-                    className="bg-secondary rounded ml-2 mt-1 p-1"
-                    size={28}
-                  />
-                </a>
-                <a
-                  href={`https://github.com/${GIT_PROFILE}`}
-                  className="underline hover:text-accent duration-200 transition-colors"
-                >
-                  <Twitter
-                    className="bg-secondary rounded ml-2 mt-1 p-1"
-                    size={28}
-                  />
-                </a>
-                <a
-                  href={`https://github.com/${GIT_PROFILE}`}
-                  className="underline hover:text-accent duration-200 transition-colors"
-                >
-                  <Linkedin
-                    className="bg-secondary rounded ml-2 mt-1 p-1"
-                    size={28}
-                  />
-                </a>
               </div>
             </>
           )}
