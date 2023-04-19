@@ -1,0 +1,35 @@
+.post-body h1 {
+  @apply text-5xl text-footer font-bold mb-2 mt-24 leading-tight;
+}
+
+.post-body h2 {
+  @apply text-2xl text-footer font-semibold mb-2 leading-tight;
+}
+
+.post-body h3 {
+  @apply text-xl text-footer p-4 font-semibold mb-2 leading-tight;
+}
+
+.post-body h4 {
+  @apply text-lg text-footer p-4 font-semibold mb-2 leading-tight;
+}
+
+.post-body p {
+  @apply p-2 text-tertiary;
+}
+
+.post-body blockquote {
+  @apply p-4 text-secondary font-semibold italic border-l-2 border-tertiary;
+}
+
+.post-body pre {
+  @apply p-4 mb-2 mt-2 bg-tertiary text-footer rounded-lg shadow-xl;
+}
+
+.post-body code {
+  @apply text-sm;
+}
+
+.post-body a {
+  @apply text-footer underline font-semibold;
+}
