@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -20,7 +21,7 @@ module.exports = {
         tertiary: '#585858',
         foreground: '#a3bbb6',
         backdrop: '#B2B2B2',
-        accent: '	#93a9a4',
+        accent: '#93a9a4',
       },
       spacing: {
         28: '7rem',

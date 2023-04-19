@@ -14,6 +14,12 @@
         "label": "content"
       }
     },
+    "markdown": {
+      "type": "StructuredText",
+      "config": {
+        "label": "markdown"
+      }
+    },
     "excerpt": {
       "type": "Text",
       "config": {

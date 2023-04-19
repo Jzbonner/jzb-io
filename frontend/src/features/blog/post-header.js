@@ -1,25 +1,21 @@
+//TODO: combine author and date component with one div for better styling
+
 import Avatar from './avatar';
 import DateComponent from '../../helperComponents/date';
-import CoverImage from './cover-image';
 import PostTitle from './post-title';
 
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12">
+      {/* changed the cover param to test different versions of this setup */}
+      <PostTitle title={title} cover={coverImage.url} slug={coverImage.slug}>
+        {title}
+      </PostTitle>
+      <div className="md:block md:mb-12">
         {author && <Avatar name={author.name} picture={author.picture} />}
       </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
-        <CoverImage title={title} url={coverImage.url} />
-      </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block md:hidden mb-6">
-          {author && <Avatar name={author.name} picture={author.picture} />}
-        </div>
-        <div className="mb-6 text-lg">
-          <DateComponent dateString={date} />
-        </div>
+      <div className="p-2 mb-6 -mt-16 ml-16 text-xs text-tertiary font-semibold uppercase">
+        <DateComponent dateString={date} />
       </div>
     </>
   );

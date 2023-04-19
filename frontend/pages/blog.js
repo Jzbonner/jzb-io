@@ -2,6 +2,7 @@ import Container from '../src/global/container';
 import MoreStories from '../src/features/blog/more-stories';
 import HeroPost from '../src/features/blog/hero-post';
 import Intro from '../src/features/intro';
+import Header from '../src/global/header';
 import Layout from '../src/global/layout';
 import { getAllPostsForBlog } from '../lib/api';
 import Head from 'next/head';
@@ -16,6 +17,7 @@ export default function Blog({ preview, allPosts }) {
           <title>jzb.io</title>
         </Head>
         <Container>
+          <Header />
           <Intro />
           {heroPost && (
             <HeroPost

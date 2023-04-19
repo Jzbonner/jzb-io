@@ -1,28 +1,19 @@
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { BLOCKS } from '@contentful/rich-text-types';
-import markdownStyles from '../../../styles/markdown-styles.module.css';
-import RichTextAsset from '../../helperComponents/rich-text-asset';
-
-const customMarkdownOptions = (content) => ({
-  renderNode: {
-    [BLOCKS.EMBEDDED_ASSET]: (node) => (
-      <RichTextAsset
-        id={node.data.target.sys.id}
-        assets={content.links.assets.block}
-      />
-    ),
-  },
-});
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export default function PostBody({ content }) {
   return (
-    <div className="max-w-2xl mx-auto">
-      <div className={markdownStyles['markdown']}>
-        {documentToReactComponents(
-          content.json,
-          customMarkdownOptions(content),
-        )}
-      </div>
+    <div class="max-w-3xl mx-auto pb-24">
+      <ReactMarkdown
+        children={content}
+        remarkPlugins={[remarkGfm]}
+        className={'post-body'}
+        components={{
+          a: (props) => {
+            return <a href={props.href}>link</a>;
+          },
+        }}
+      />
     </div>
   );
 }

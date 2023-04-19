@@ -5,6 +5,7 @@ import Container from '../../src/global/container';
 import PostBody from '../../src/features/blog/post-body';
 import MoreStories from '../../src/features/blog/more-stories';
 import Header from '../../src/global/header';
+import Intro from '../../src/features/intro';
 import PostHeader from '../../src/features/blog/post-header';
 import SectionSeparator from '../../src/helperComponents/section-separator';
 import Layout from '../../src/global/layout';
@@ -22,6 +23,7 @@ export default function Post({ post, morePosts, preview }) {
     <Layout preview={preview}>
       <Container>
         <Header />
+        <Intro />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
@@ -37,9 +39,8 @@ export default function Post({ post, morePosts, preview }) {
                 date={post.date}
                 author={post.author}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post.markdown} />
             </article>
-            <SectionSeparator />
             {morePosts && morePosts.length > 0 && (
               <MoreStories posts={morePosts} />
             )}

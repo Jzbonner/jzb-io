@@ -26,7 +26,8 @@ content {
     }
   }
 }
-`
+markdown
+`;
 
 async function fetchGraphQL(query, preview = false) {
   return fetch(
@@ -42,16 +43,16 @@ async function fetchGraphQL(query, preview = false) {
         }`,
       },
       body: JSON.stringify({ query }),
-    }
-  ).then((response) => response.json())
+    },
+  ).then((response) => response.json());
 }
 
 function extractPost(fetchResponse) {
-  return fetchResponse?.data?.postCollection?.items?.[0]
+  return fetchResponse?.data?.postCollection?.items?.[0];
 }
 
 function extractPostEntries(fetchResponse) {
-  return fetchResponse?.data?.postCollection?.items
+  return fetchResponse?.data?.postCollection?.items;
 }
 
 export async function getPreviewPostBySlug(slug) {
@@ -63,9 +64,9 @@ export async function getPreviewPostBySlug(slug) {
         }
       }
     }`,
-    true
-  )
-  return extractPost(entry)
+    true,
+  );
+  return extractPost(entry);
 }
 
 export async function getAllPostsWithSlug() {
@@ -76,9 +77,9 @@ export async function getAllPostsWithSlug() {
           ${POST_GRAPHQL_FIELDS}
         }
       }
-    }`
-  )
-  return extractPostEntries(entries)
+    }`,
+  );
+  return extractPostEntries(entries);
 }
 
 export async function getAllPostsForBlog(preview) {
@@ -90,9 +91,9 @@ export async function getAllPostsForBlog(preview) {
         }
       }
     }`,
-    preview
-  )
-  return extractPostEntries(entries)
+    preview,
+  );
+  return extractPostEntries(entries);
 }
 
 export async function getPostAndMorePosts(slug, preview) {
@@ -106,8 +107,8 @@ export async function getPostAndMorePosts(slug, preview) {
         }
       }
     }`,
-    preview
-  )
+    preview,
+  );
   const entries = await fetchGraphQL(
     `query {
       postCollection(where: { slug_not_in: "${slug}" }, order: date_DESC, preview: ${
@@ -118,10 +119,10 @@ export async function getPostAndMorePosts(slug, preview) {
         }
       }
     }`,
-    preview
-  )
+    preview,
+  );
   return {
     post: extractPost(entry),
     morePosts: extractPostEntries(entries),
-  }
+  };
 }

@@ -5,8 +5,7 @@
 
 import Container from './container';
 import cn from 'classnames';
-import { Inbox } from 'react-feather';
-import { GIT_PROFILE } from '../../lib/constants';
+import { Inbox, Clipboard, AtSign, Compass } from 'react-feather';
 
 export default function Alert({ preview }) {
   return (
@@ -17,7 +16,7 @@ export default function Alert({ preview }) {
       })}
     >
       <Container>
-        <div className="py-2 text-sm">
+        <div class="py-2 text-sm">
           {preview ? (
             <>
               This is page is a preview.{' '}
@@ -31,11 +30,27 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              <div className="flex">
-                <Inbox class="rounded-full border-2 border-accent" size={20} />
-                <p class="text-sm text-primary tracking-tighter font-semibold ml-2">
-                  jarrett.bonner@gmail.com
-                </p>
+              <div class="flex">
+                <Inbox
+                  class="rounded-full p-1 bg-footer border-2 border-foreground mr-1"
+                  size={28}
+                  color="#585858"
+                />
+                <Clipboard
+                  class="rounded-full p-1 bg-footer border-2 border-foreground mr-1"
+                  size={28}
+                  color="#585858"
+                />
+                <AtSign
+                  class="rounded-full p-1 bg-footer border-2 border-foreground mr-1"
+                  size={28}
+                  color="#585858"
+                />
+                <Compass
+                  class="rounded-full p-1 bg-footer border-2 border-foreground mr-1"
+                  size={28}
+                  color="#585858"
+                />
               </div>
             </>
           )}
