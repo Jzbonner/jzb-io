@@ -1,17 +1,17 @@
 .post-body h1 {
-  @apply text-5xl text-footer font-bold mb-2 mt-24 leading-tight;
+  @apply mt-24 mb-2 text-5xl font-bold leading-tight text-footer;
 }
 
 .post-body h2 {
-  @apply text-2xl text-footer font-semibold mb-2 leading-tight;
+  @apply mb-2 text-2xl font-semibold leading-tight text-footer;
 }
 
 .post-body h3 {
-  @apply text-xl text-footer p-4 font-semibold mb-2 leading-tight;
+  @apply p-4 mb-2 text-xl font-semibold leading-tight text-footer;
 }
 
 .post-body h4 {
-  @apply text-lg text-footer p-4 font-semibold mb-2 leading-tight;
+  @apply p-4 mb-2 text-lg font-semibold leading-tight text-footer;
 }
 
 .post-body p {
@@ -19,11 +19,11 @@
 }
 
 .post-body blockquote {
-  @apply p-4 text-secondary font-semibold italic border-l-2 border-tertiary;
+  @apply p-4 italic font-semibold border-l-2 text-secondary border-tertiary;
 }
 
 .post-body pre {
-  @apply p-4 mb-2 mt-2 bg-tertiary text-footer rounded-lg shadow-xl;
+  @apply p-4 mt-2 mb-2 rounded-lg shadow-xl bg-tertiary text-footer;
 }
 
 .post-body code {
@@ -31,5 +31,17 @@
 }
 
 .post-body a {
-  @apply text-footer underline font-semibold;
+  @apply font-semibold underline text-footer;
+}
+
+.post-body li {
+  @apply p-1 ml-4 text-tertiary;
+}
+
+.post-body ol {
+  @apply font-semibold;
+}
+
+.post-body img {
+  @apply p-4 rounded-lg;
 }

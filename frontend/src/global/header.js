@@ -8,24 +8,24 @@ export default function Header() {
   };
 
   return (
-    <nav class="p-4 -my-6 group border-t-2 border-footer ">
+    <nav class="p-4 -my-6 group border-t-4 border-tertiary border-opacity-40">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
-            <div class="group-hover:border-b-4 group-hover:border-footer group-hover:rounded-lg p-4 group-hover:shadow-xl">
+            <div class="group-hover:border-4 group-hover:border-footer border-4 border-foreground rounded-full group-hover:rounded-full p-4 group-hover:shadow-xl bg-layered-steps bg-cover">
               <Layers color="#EEEEEE" />
             </div>
             <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-4">
+              <div class="ml-10 flex items-baseline font-hind space-x-4">
                 <a
                   href="/"
-                  class="border-2 border-tertiary text-footer uppercase hover:text-tertiary px-3 py-2 rounded-md text-sm font-medium"
+                  class="text-footer uppercase hover:text-tertiary px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Home
                 </a>
                 <a
                   href="/blog"
-                  class="border-2 border-tertiary text-footer uppercase hover:text-tertiary px-3 py-2 rounded-md text-sm font-medium"
+                  class="text-footer uppercase hover:text-tertiary px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Blog
                 </a>

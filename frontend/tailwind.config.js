@@ -38,9 +38,19 @@ module.exports = {
         '7xl': '4.5rem',
         '8xl': '6.25rem',
       },
+      fontFamily: {
+        cardo: ['Cardo', 'serif'],
+        hind: ['Hind', 'sans-serif'],
+      },
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
+      },
+      backgroundImage: {
+        'card-pattern': "url('https://bit.ly/3UZlZZe')",
+        'poly-grid': "url('https://bit.ly/41Kn7Sw')",
+        'layered-steps': "url('https://bit.ly/40tPkMg')",
+        'layered-waves': "url('https://bit.ly/41KvtJS')",
       },
     },
   },

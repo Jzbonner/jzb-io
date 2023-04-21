@@ -35,10 +35,10 @@ export default function ServicesSection() {
       <section class="text-gray-600 body-font">
         <div class="container px-5 mt-24 mb-2 flex flex-wrap">
           <div class="flex flex-col text-left w-full mb-20">
-            <h2 class="text-sm text-tertiary uppercase font-medium title-font mb-1">
+            <h2 class="text-md text-tertiary uppercase font-semibold title-font font-hind mb-1">
               What have I been a part of?
             </h2>
-            <h1 class="sm:text-2xl text-xl font-medium title-font text-primary drop-shadow-md">
+            <h1 class="sm:text-2xl text-xl font-semibold font-hind title-font text-primary drop-shadow-md">
               Experience and Contributions
             </h1>
           </div>
@@ -47,19 +47,19 @@ export default function ServicesSection() {
             <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
               <div class="flex relative pb-12">
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                  <div class="h-full w-1 bg-footer pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-white relative z-10">
                   <Printer color="#e9f3ff" size={20} />
                 </div>
                 <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font uppercase text-sm text-tertiary mb-1">
+                  <h2 class="font-semibold title-font text-lg font-hind uppercase text-tertiary mb-1">
                     Cox Media Group: Atlanta Journal Constitution
                   </h2>
-                  <h2 class="font-medium title-font text-sm uppercase text-primary">
+                  <h2 class="font-medium title-font font-hind text-md uppercase text-primary">
                     Software Developer
                   </h2>
-                  <p class="leading-relaxed">
+                  <p class="leading-relaxed font-hind text-md p-3">
                     Made contributions to a codebase built with on React, AWS
                     ARCxp and Docker. Collaboratively developed features for the
                     ePaper mobile app (currently top ranking news app on Google
@@ -70,19 +70,19 @@ export default function ServicesSection() {
               </div>
               <div class="flex relative pb-12">
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                  <div class="h-full w-1 bg-footer pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-white relative z-10">
                   <Home color="#e9f3ff" size={20} />
                 </div>
                 <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-sm text-tertiary mb-1 tracking-wider">
+                  <h2 class="font-semibold title-font font-hind text-lg text-tertiary mb-1 tracking-wider">
                     REPLI
                   </h2>
-                  <h2 class="font-medium title-font text-sm text-primary uppercase mb-1 tracking-wider">
+                  <h2 class="font-medium font-hind title-font text-md text-primary uppercase mb-1 tracking-wider">
                     Front End Engineer
                   </h2>
-                  <p class="leading-relaxed">
+                  <p class="leading-relaxed font-hind text-md p-3">
                     Developed integrated static and dynamic web applications for
                     multifamily residence community organizations using PHP,
                     AWS, Docker, and Front-End technologies.
@@ -91,19 +91,19 @@ export default function ServicesSection() {
               </div>
               <div class="flex relative pb-12">
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                  <div class="h-full w-1 bg-footer pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-white relative z-10">
                   <Box color="#e9f3ff" size={20} />
                 </div>
                 <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-sm text-tertiary mb-1 uppercase tracking-wider">
+                  <h2 class="font-semibold title-font font-hind text-lg text-tertiary mb-1 uppercase tracking-wider">
                     DecoNetwork
                   </h2>
-                  <h2 class="font-medium title-font text-sm text-primary mb-1 uppercase tracking-wider">
+                  <h2 class="font-medium title-font font-hind text-md text-primary mb-1 uppercase tracking-wider">
                     Software Support Specialist
                   </h2>
-                  <p class="leading-relaxed">
+                  <p class="leading-relaxed font-hind text-md p-3">
                     Provided technical assistance, debugging support, and test
                     automation for a proprietary software solution for clients
                     in the printing and embroidery industry using Ruby on Rails
@@ -119,13 +119,13 @@ export default function ServicesSection() {
                   <User color="#e9f3ff" size={20} />
                 </div>
                 <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-sm text-tertiary mb-1 uppercase tracking-wider">
+                  <h2 class="font-semibold font-hind title-font text-lg text-tertiary mb-1 uppercase tracking-wider">
                     UNC Information Services
                   </h2>
-                  <h2 class="font-medium title-font text-sm text-primary mb-1 uppercase tracking-wider">
+                  <h2 class="font-medium title-font font-hind text-md text-primary mb-1 uppercase tracking-wider">
                     Information Technology Technician
                   </h2>
-                  <p class="leading-relaxed">
+                  <p class="leading-relaxed font-hind text-md p-3">
                     Worked with department faculty to develop WordPress admin
                     panels and WordPress websites using custom HTML, CSS and
                     jQuery components.
@@ -137,13 +137,13 @@ export default function ServicesSection() {
                   <Layers color="#e9f3ff" size={20} />
                 </div>
                 <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-sm text-tertiary mb-1 uppercase tracking-wider">
+                  <h2 class="font-semibold title-font font-hind text-lg text-tertiary mb-1 uppercase tracking-wider">
                     Cisco Systems Inc.
                   </h2>
-                  <h2 class="font-medium title-font text-sm text-primary mb-1 uppercase tracking-wider">
+                  <h2 class="font-medium title-font font-hind text-md text-primary mb-1 uppercase tracking-wider">
                     Junior/Senior Intern (Fellowship)
                   </h2>
-                  <p class="leading-relaxed">
+                  <p class="leading-relaxed font-hind text-md p-3">
                     Shadowed Mechanical and Material Engineers on projects that
                     required developing cross platform IT and Network Security
                     solutions using Unix/Linux shell scripting.
@@ -155,7 +155,7 @@ export default function ServicesSection() {
             <div class="mt-16 lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
               <div class="flex flex-wrap -m-4 text-center">
                 <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                  <div class="bg-poly-grid px-4 py-6 shadow-xl rounded-lg">
                     <img
                       class="w-12 h-12 mb-3 inline-block"
                       src="https://bit.ly/3ldTCJj"
@@ -168,7 +168,7 @@ export default function ServicesSection() {
                         iconData.dev.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-gradient-to-l from-indigo-200 via-red-100 to-yellow-100 shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -177,7 +177,7 @@ export default function ServicesSection() {
                   </div>
                 </div>
                 <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                  <div class="bg-poly-grid px-4 py-6 shadow-xl rounded-lg">
                     <img
                       class="w-12 h-12 mb-3 inline-block"
                       src="https://bit.ly/3JkMR0d"
@@ -190,7 +190,7 @@ export default function ServicesSection() {
                         iconData.db.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-gradient-to-l from-indigo-200 via-red-100 to-yellow-100 shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -199,7 +199,7 @@ export default function ServicesSection() {
                   </div>
                 </div>
                 <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                  <div class="bg-poly-grid px-4 py-6 shadow-xl rounded-lg">
                     <img
                       class="w-12 h-12 mb-3 inline-block"
                       src="https://bit.ly/3LtTBeH"
@@ -212,7 +212,7 @@ export default function ServicesSection() {
                         iconData.design.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-gradient-to-l from-indigo-200 via-red-100 to-yellow-100 shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -221,7 +221,7 @@ export default function ServicesSection() {
                   </div>
                 </div>
                 <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                  <div class="bg-poly-grid px-4 py-6 shadow-xl rounded-lg">
                     <img
                       class="w-12 h-12 mb-3 inline-block"
                       src="https://bit.ly/3JHTH07"
@@ -234,7 +234,7 @@ export default function ServicesSection() {
                         iconData.web.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-gradient-to-l from-indigo-200 via-red-100 to-yellow-100 shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -243,7 +243,7 @@ export default function ServicesSection() {
                   </div>
                 </div>
                 <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                  <div class="bg-poly-grid px-4 py-6 shadow-xl rounded-lg">
                     <img
                       class="w-12 h-12 mb-3 inline-block"
                       src="https://bit.ly/3ZRzI5D"
@@ -256,7 +256,7 @@ export default function ServicesSection() {
                         iconData.sdlc.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-gradient-to-l from-indigo-200 via-red-100 to-yellow-100 shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
@@ -265,7 +265,7 @@ export default function ServicesSection() {
                   </div>
                 </div>
                 <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
-                  <div class="border-2 border-gray-200 px-4 py-6 shadow-xl rounded-lg">
+                  <div class="bg-poly-grid px-4 py-6 shadow-xl rounded-lg">
                     <img
                       class="w-12 h-12 mb-3 inline-block"
                       src="http://bit.ly/3LsU5BW"
@@ -278,7 +278,7 @@ export default function ServicesSection() {
                         iconData.proj.map((icon) => {
                           return (
                             <i
-                              class={`devicon-${icon} colored -mx-1 bg-backdrop shadow-xl rounded-full p-2`}
+                              class={`devicon-${icon} colored -mx-1 bg-gradient-to-l from-indigo-200 via-red-100 to-yellow-100 shadow-xl rounded-full p-2`}
                               style={{ fontSize: 30 }}
                             ></i>
                           );
