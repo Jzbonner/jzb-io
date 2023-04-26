@@ -13,23 +13,25 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div>
-      <div className="mb-5 border-2 border-primary shadow-xl">
+    <div class="flow-root">
+      <div className="mb-5 overflow-hidden border-2 shadow-xl h-96 border-primary">
         <CoverImage title={title} slug={slug} url={coverImage.url} />
       </div>
-      <h3 className="text-3xl text-footer font-medium mb-3 leading-snug">
+      <h3 className="mb-3 text-3xl font-semibold leading-snug font-hind text-footer">
         <Link href={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
       </h3>
-      <div className="flex items-center ml-2 text-sm text-footer font-semibold uppercase mb-4">
-        <Calendar size={20} />
+      <div className="flex items-center mb-4 -mt-5 text-sm font-semibold uppercase font-hind text-tertiary">
+        <Calendar size={20} class="-mt-1" />
         <DateComponent dateString={date} />
       </div>
-      <p className="text-md text-tertiary font-medium leading-relaxed mb-4">
+      <p className="mb-4 text-lg font-medium leading-relaxed font-hind text-tertiary">
         {excerpt}
       </p>
-      {author && <Avatar name={author.name} picture={author.picture} />}
+      <div class="float-right mt-4">
+        {author && <Avatar name={author.name} picture={author.picture} />}
+      </div>
     </div>
   );
 }

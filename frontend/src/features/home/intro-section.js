@@ -21,32 +21,32 @@ export default function IntroSection() {
           </div>
 
           <div class="flex flex-col text-center w-full mb-20">
-            <h2 class="text-sm text-primary uppercase tracking-widest font-medium title-font mb-1">
+            <h2 class="text-sm text-primary uppercase font-hind tracking-widest font-medium title-font mb-1">
               finding mediums in a world full of extremes
             </h2>
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-tertiary drop-shadow-md">
+            <h1 class="sm:text-3xl text-2xl font-hind font-medium title-font text-tertiary drop-shadow-md">
               Developing Better, Empowering Community
             </h1>
           </div>
           <div class="flex flex-wrap -m-4">
             <div class="p-4 md:w-1/3">
-              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                <div class="flex items-center mb-3">
+              <div class="flex rounded-lg h-full mix-blend-darken hover:mix-blend-overlay bg-card-pattern bg-bottom p-8 flex-col hover:shadow-xl">
+                <div class="flex items-center mb-3 border-b-2 border-backdrop pb-4">
                   <div class="w-8 h-8 mr-3 inline-flex items-center drop-shadow-md justify-center rounded-full bg-backdrop text-white flex-shrink-0">
                     <Coffee size={20} />
                   </div>
-                  <h2 class="text-tertiary text-lg title-font font-medium">
+                  <h2 class="text-footer text-2xl title-font font-hind font-medium">
                     Software Developer
                   </h2>
                 </div>
-                <div class="flex-grow">
-                  <p class="leading-relaxed text-base">
+                <div class="flex-grow flow-root">
+                  <p class="leading-relaxed text-sm font-hind text-footer">
                     Changing the digital landscape of our future one web-app at
                     a time. I have contributed to projects in the help-desk
                     space, inventory and account management, and data protection
                     and content management industries.
                   </p>
-                  <a class="mt-3 text-sm font-semibold text-tertiary inline-flex items-center">
+                  <a class="float-right mt-3 text-sm text-end font-hind font-semibold text-tertiary inline-flex items-center justify-items-end">
                     My Projects
                     <Cpu color="#93a9a4" size={20} class="ml-1" />
                   </a>
@@ -54,24 +54,25 @@ export default function IntroSection() {
               </div>
             </div>
             <div class="p-4 md:w-1/3">
-              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                <div class="flex items-center mb-3">
+              <div class="flex rounded-lg h-full mix-blend-darken hover:mix-blend-overlay bg-card-pattern bg-bottom p-8 flex-col hover:shadow-xl">
+                <div class="flex items-center mb-3 border-b-2 border-backdrop pb-4">
                   <div class="w-8 h-8 mr-3 inline-flex items-center drop-shadow-md justify-center rounded-full bg-backdrop text-white flex-shrink-0">
                     <PenTool size={20} />
                   </div>
-                  <h2 class="text-tertiary text-lg title-font font-medium">
+                  <h2 class="text-footer text-2xl title-font font-hind font-medium">
                     Technical Writer
                   </h2>
                 </div>
-                <div class="flex-grow">
-                  <p class="leading-relaxed text-base">
+                <div class="flex-grow flow-root">
+                  <p class="leading-relaxed font-hind text-sm text-footer">
                     Currently taking the time to analyze my development and
                     design descisions by writing tech focused articles and
-                    guides for improving the software development process.
+                    guides for improving the software development process and
+                    contributing to our evergrowing digital landscape.
                   </p>
                   <a
                     href="/blog"
-                    class="mt-3 font-semibold text-sm text-tertiary inline-flex items-center"
+                    class="float-right mt-3 font-hind font-semibold text-sm text-tertiary inline-flex items-center"
                   >
                     Read More
                     <Bookmark color="#93a9a4" size={20} class="ml-1" />
@@ -80,23 +81,23 @@ export default function IntroSection() {
               </div>
             </div>
             <div class="p-4 md:w-1/3">
-              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                <div class="flex items-center mb-3">
+              <div class="flex rounded-lg h-full mix-blend-darken hover:mix-blend-overlay bg-card-pattern bg-bottom p-8 flex-col hover:shadow-xl">
+                <div class="flex items-center mb-3 border-b-2 border-backdrop pb-4">
                   <div class="w-8 h-8 mr-3 inline-flex items-center drop-shadow-md justify-center rounded-full bg-backdrop text-white flex-shrink-0">
                     <Briefcase size={20} />
                   </div>
-                  <h2 class="text-tertiary text-lg title-font font-medium">
+                  <h2 class="text-footer text-2xl title-font font-hind font-medium">
                     Community Builder
                   </h2>
                 </div>
-                <div class="flex-grow">
-                  <p class="leading-relaxed text-base">
+                <div class="flex-grow flow-root">
+                  <p class="leading-relaxed font-hind text-sm text-footer">
                     I'm deploying web technology focused solutions that foster
                     community around interesting data. Hoping to pass along
                     products, services and shareable knowledge to a community of
                     developers that build/create.
                   </p>
-                  <a class="mt-3 text-sm font-semibold text-tertiary inline-flex items-center">
+                  <a class="float-right mt-3 text-sm font-hind font-semibold text-tertiary inline-flex items-center">
                     Contact Me
                     <MessageCircle color="#93a9a4" size={20} class="ml-1" />
                   </a>
