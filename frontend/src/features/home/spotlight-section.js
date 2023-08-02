@@ -6,7 +6,7 @@ export default function SpotlightSection() {
       <section class="text-tertiary body-font">
         <div class="container px-5 pb-24 mt-14 flex flex-wrap">
           <div class="flex flex-col text-right w-full">
-            <h2 class="text-md text-tertiary font-hind uppercase font-semibold title-font mb-1">
+            <h2 id="projects" class="text-md text-tertiary font-hind uppercase font-semibold title-font mb-1">
               What have I built?
             </h2>
             <h1 class="sm:text-2xl text-2xl font-semibold font-hind title-font text-footer drop-shadow-md">
@@ -15,14 +15,14 @@ export default function SpotlightSection() {
           </div>
 
           {/**portfolio spotlight: 1  */}
-          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg -mt-1 sm:-mt-14">
+          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg mt-24 lg:ml-12 sm:ml-0 sm:mt-0">
             <img
-              class="object-cover object-center w-full h-full"
+              class="scale-110 ml-4 mr-4"
               src="https://bit.ly/3K1IhV8"
               alt="ajc-mockups"
             />
           </div>
-          <div class="bg-secondary border-2 border-tertiary font-hind rounded-lg flex flex-wrap -mx-6 mt-auto mb-auto pl-8 lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+          <div class="font-hind rounded-lg flex flex-wrap p-4 mt-24 -mx-6  mb-auto lg:w-1/2 sm:w-2/3 content-start">
             <div class="w-full sm:p-4 px-4 mb-6">
               <h1 class="title-font font-semibold font-hind text-2xl mb-8 mt-8 sm:mt-4 text-tertiary border-b-2 border-tertiary">
                 Atlanta Journal Constitution & Dawgnation.com
@@ -64,12 +64,19 @@ export default function SpotlightSection() {
           </div>
 
           {/**portfolio spotlight: 2 */}
-          <div class="bg-secondary border-2 border-tertiary font-hind rounded-lg flex flex-wrap text-right -mx-6 mt-24 mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg mt-24 lg:ml-12 sm:ml-0 sm:mt-0">
+            <img
+              class="scale-110 ml-4"
+              src="http://bit.ly/3KeZrzN"
+              alt="repli-mockups"
+            />
+          </div>
+          <div class="font-hind rounded-lg flex flex-wrap text-right p-4 -mx-6 mt-24 mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
             <div class="w-full sm:p-4 px-4 mb-6">
               <h1 class="title-font font-semibold text-2xl mb-8 mt-8 sm:mt-4 text-tertiary border-b-2 border-tertiary">
                 REPLI 360 LLC.
               </h1>
-              <div class="leading-relaxed text-tertiary p-2">
+              <div class="leading-relaxed text-tertiary font-hind p-2">
                 I worked collaboratively to build and deploy over 100+ company
                 landing pages, multifamily sites and apartment marketing
                 campaigns. My responsibilities were inline with creating
@@ -104,14 +111,6 @@ export default function SpotlightSection() {
                 Products & Services
               </p>
             </div>
-          </div>
-          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg mt-2 lg:ml-12 sm:ml-0 sm:mt-0">
-            <img
-              // class="object-cover object-center w-max h-max"
-              class="scale-110 ml-4"
-              src="http://bit.ly/3KeZrzN"
-              alt="repli-mockups"
-            />
           </div>
         </div>
       </section>

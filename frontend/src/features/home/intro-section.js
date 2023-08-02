@@ -30,7 +30,7 @@ export default function IntroSection() {
           </div>
           <div class="flex flex-wrap -m-4">
             <div class="p-4 md:w-1/3">
-              <div class="flex rounded-lg h-full mix-blend-darken hover:mix-blend-overlay bg-card-pattern bg-bottom p-8 flex-col hover:shadow-xl">
+              <div class="flex rounded-lg h-full hover:mix-blend-overlay bg-tertiary bg-bottom p-8 flex-col hover:shadow-xl">
                 <div class="flex items-center mb-3 border-b-2 border-backdrop pb-4">
                   <div class="w-8 h-8 mr-3 inline-flex items-center drop-shadow-md justify-center rounded-full bg-backdrop text-white flex-shrink-0">
                     <Coffee size={20} />
@@ -46,7 +46,7 @@ export default function IntroSection() {
                     space, inventory and account management, and data protection
                     and content management industries.
                   </p>
-                  <a class="float-right mt-3 text-sm text-end font-hind font-semibold text-tertiary inline-flex items-center justify-items-end">
+                  <a href="#projects" class="float-right mt-3 text-sm text-end font-hind text-primary inline-flex items-center justify-items-end">
                     My Projects
                     <Cpu color="#93a9a4" size={20} class="ml-1" />
                   </a>
@@ -54,7 +54,7 @@ export default function IntroSection() {
               </div>
             </div>
             <div class="p-4 md:w-1/3">
-              <div class="flex rounded-lg h-full mix-blend-darken hover:mix-blend-overlay bg-card-pattern bg-bottom p-8 flex-col hover:shadow-xl">
+              <div class="flex rounded-lg h-full hover:mix-blend-overlay bg-tertiary bg-bottom p-8 flex-col hover:shadow-xl">
                 <div class="flex items-center mb-3 border-b-2 border-backdrop pb-4">
                   <div class="w-8 h-8 mr-3 inline-flex items-center drop-shadow-md justify-center rounded-full bg-backdrop text-white flex-shrink-0">
                     <PenTool size={20} />
@@ -72,7 +72,7 @@ export default function IntroSection() {
                   </p>
                   <a
                     href="/blog"
-                    class="float-right mt-3 font-hind font-semibold text-sm text-tertiary inline-flex items-center"
+                    class="float-right mt-3 font-hind text-sm text-primary inline-flex items-center"
                   >
                     Read More
                     <Bookmark color="#93a9a4" size={20} class="ml-1" />
@@ -81,7 +81,7 @@ export default function IntroSection() {
               </div>
             </div>
             <div class="p-4 md:w-1/3">
-              <div class="flex rounded-lg h-full mix-blend-darken hover:mix-blend-overlay bg-card-pattern bg-bottom p-8 flex-col hover:shadow-xl">
+              <div class="flex rounded-lg h-full hover:mix-blend-overlay bg-tertiary bg-bottom p-8 flex-col hover:shadow-xl">
                 <div class="flex items-center mb-3 border-b-2 border-backdrop pb-4">
                   <div class="w-8 h-8 mr-3 inline-flex items-center drop-shadow-md justify-center rounded-full bg-backdrop text-white flex-shrink-0">
                     <Briefcase size={20} />
@@ -97,7 +97,7 @@ export default function IntroSection() {
                     products, services and shareable knowledge to a community of
                     developers that build/create.
                   </p>
-                  <a class="float-right mt-3 text-sm font-hind font-semibold text-tertiary inline-flex items-center">
+                  <a href="#footer" class="float-right mt-3 text-sm font-hind text-primary inline-flex items-center">
                     Contact Me
                     <MessageCircle color="#93a9a4" size={20} class="ml-1" />
                   </a>

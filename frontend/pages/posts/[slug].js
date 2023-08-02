@@ -7,7 +7,6 @@ import MoreStories from '../../src/features/blog/more-stories';
 import Header from '../../src/global/header';
 import Intro from '../../src/features/intro';
 import PostHeader from '../../src/features/blog/post-header';
-import SectionSeparator from '../../src/helperComponents/section-separator';
 import Layout from '../../src/global/layout';
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 import PostTitle from '../../src/features/blog/post-title';
