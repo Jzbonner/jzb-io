@@ -23,7 +23,7 @@ export default function Blog({ preview, allPosts }) {
             <HeroPost
               title={heroPost.title}
               coverImage={heroPost.coverImage}
-              date={heroPost.date}
+              // date={heroPost.date}
               author={heroPost.author}
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}

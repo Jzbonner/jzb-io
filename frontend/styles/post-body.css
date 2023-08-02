@@ -23,7 +23,7 @@
 }
 
 .post-body pre {
-  @apply p-4 mt-2 mb-2 rounded-lg shadow-xl bg-tertiary text-footer;
+  @apply p-4 mt-2 mb-2 overflow-scroll rounded-lg shadow-xl lg:overflow-hidden bg-tertiary text-footer;
 }
 
 .post-body code {

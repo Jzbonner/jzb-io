@@ -12,22 +12,23 @@ export default function Header() {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
-            <div class="group-hover:border-4 group-hover:border-footer border-4 border-foreground rounded-full group-hover:rounded-full p-4 group-hover:shadow-xl bg-layered-steps bg-cover">
-              <Layers color="#EEEEEE" />
-            </div>
             <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline font-hind space-x-4">
+              <div class="ml-10 flex items-baseline font-hind space-x-8">
                 <a
                   href="/"
-                  class="text-footer uppercase hover:text-tertiary px-3 py-2 rounded-md text-sm font-medium"
+                  class="relative px-6 py-3 font-bold text-primary text-xs group/home"
                 >
-                  Home
+                  <span class="absolute inset-0 w-full h-full rounded-lg transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-backdrop group-hover/home:translate-x-0 group-hover/home:translate-y-0"></span>
+                  <span class="absolute inset-0 w-full h-full border-2 border-tertiary rounded-lg"></span>
+                  <span class="relative">Home</span>
                 </a>
                 <a
                   href="/blog"
-                  class="text-footer uppercase hover:text-tertiary px-3 py-2 rounded-md text-sm font-medium"
+                  class="relative px-6 py-3 font-bold text-primary text-xs group/blog"
                 >
-                  Blog
+                  <span class="absolute inset-0 w-full h-full rounded-lg transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-backdrop group-hover/blog:translate-x-0 group-hover/blog:translate-y-0"></span>
+                  <span class="absolute inset-0 w-full h-full border-2 border-tertiary rounded-lg"></span>
+                  <span class="relative">Blog</span>
                 </a>
               </div>
             </div>
@@ -39,53 +40,28 @@ export default function Header() {
               onClick={menuToggled}
               aria-expanded="false"
             >
-              <svg
-                class="block h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-              <svg
-                class="hidden h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <Layers color="#EEEEEE" />
             </button>
           </div>
         </div>
       </div>
       <div class={`${toggleMenu ? 'block' : 'hidden'} md:hidden`}>
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div class="px-2 pt-4 pb-12 space-y-1 sm:px-3">
           <a
             href="/"
-            class="text-footer hover:text-tertiary block px-3 py-2 rounded-md text-base font-medium"
+            class="relative px-6 py-3 font-bold text-primary group/home"
           >
-            Home
+            <span class="absolute inset-0 w-full h-full rounded-lg transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-backdrop group-hover/home:translate-x-0 group-hover/home:translate-y-0"></span>
+            <span class="absolute inset-0 w-full h-full rounded-lg border-2 border-tertiary"></span>
+            <span class="relative">Home</span>
           </a>
           <a
             href="/blog"
-            class="text-footer hover:text-tertiary block px-3 py-2 rounded-md text-base font-medium"
+            class="relative px-6 py-3 ml-6 font-bold text-primary group/blog"
           >
-            Articles
+            <span class="absolute inset-0 w-full h-full rounded-lg transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-backdrop group-hover/blog:translate-x-0 group-hover/blog:translate-y-0"></span>
+            <span class="absolute inset-0 w-full h-full rounded-lg border-2 border-tertiary"></span>
+            <span class="relative">Blog</span>
           </a>
         </div>
       </div>

@@ -14,7 +14,7 @@ export default function PostPreview({
 }) {
   return (
     <div class="flow-root">
-      <div className="mb-5 overflow-hidden border-2 shadow-xl h-96 border-primary">
+      <div className="mb-5 overflow-hidden border-2 shadow-xl rounded-xl h-96 border-primary">
         <CoverImage title={title} slug={slug} url={coverImage.url} />
       </div>
       <h3 className="mb-3 text-3xl font-semibold leading-snug font-hind text-footer">
@@ -22,7 +22,7 @@ export default function PostPreview({
           {title}
         </Link>
       </h3>
-      <div className="flex items-center mb-4 -mt-5 text-sm font-semibold uppercase font-hind text-tertiary">
+      <div className="flex items-center mb-4 -mt-3 text-sm font-semibold uppercase font-hind text-tertiary">
         <Calendar size={20} class="-mt-1" />
         <DateComponent dateString={date} />
       </div>
