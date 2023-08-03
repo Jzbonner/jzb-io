@@ -8,12 +8,18 @@ const iconData = {
     'nextjs-original',
     'nodejs-plain',
     'graphql-plain',
+    'python-plain',
     'php-plain',
     'laravel-plain-wordmark',
     'wordpress-plain',
   ],
   design: ['figma-plain', 'tailwindcss-plain', 'canva-original'],
-  sdlc: ['jest-plain', 'heroku-original', 'linux-plain'],
+  sdlc: [
+    'jest-plain',
+    'heroku-original',
+    'linux-plain',
+    'amazonwebservices-original',
+  ],
   db: [
     'postgresql-plain',
     'mysql-plain',
@@ -60,8 +66,8 @@ export default function ServicesSection() {
                     Software Developer
                   </h2>
                   <p class="leading-relaxed font-hind text-md p-3">
-                    Made contributions to a codebase built with React, AWS
-                    ARCxp and Docker. Collaboratively developed features for the
+                    Made contributions to a codebase built with React, AWS ARCxp
+                    and Docker. Collaboratively developed features for the
                     ePaper mobile app (currently top ranking news app on Google
                     Play Store), and designed/developed new pages for the AJC
                     and AJC-affiliated web apps.
