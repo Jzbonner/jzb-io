@@ -44,7 +44,7 @@ export default function ServicesSection() {
             <h2 class="text-md text-tertiary uppercase font-semibold title-font font-hind mb-1">
               What have I been a part of?
             </h2>
-            <h1 class="sm:text-2xl text-xl font-semibold font-hind title-font text-primary drop-shadow-md">
+            <h1 class="sm:text-2xl text-xl font-semibold font-hind title-font text-footer drop-shadow-md">
               Experience and Contributions
             </h1>
           </div>
@@ -62,7 +62,7 @@ export default function ServicesSection() {
                   <h2 class="font-semibold title-font text-lg font-hind uppercase text-tertiary mb-1">
                     Cox Media Group: Atlanta Journal Constitution
                   </h2>
-                  <h2 class="font-medium title-font font-hind text-md uppercase text-primary">
+                  <h2 class="font-medium title-font font-hind text-md uppercase text-footer">
                     Software Developer
                   </h2>
                   <p class="leading-relaxed font-hind text-md p-3">
@@ -78,14 +78,14 @@ export default function ServicesSection() {
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div class="h-full w-1 bg-footer pointer-events-none"></div>
                 </div>
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-white relative z-10">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-footer relative z-10">
                   <Home color="#e9f3ff" size={20} />
                 </div>
                 <div class="flex-grow pl-4">
                   <h2 class="font-semibold title-font font-hind text-lg text-tertiary mb-1 tracking-wider">
                     REPLI
                   </h2>
-                  <h2 class="font-medium font-hind title-font text-md text-primary uppercase mb-1 tracking-wider">
+                  <h2 class="font-medium font-hind title-font text-md text-footer uppercase mb-1 tracking-wider">
                     Front End Engineer
                   </h2>
                   <p class="leading-relaxed font-hind text-md p-3">
@@ -99,14 +99,14 @@ export default function ServicesSection() {
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div class="h-full w-1 bg-footer pointer-events-none"></div>
                 </div>
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-white relative z-10">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-footer relative z-10">
                   <Box color="#e9f3ff" size={20} />
                 </div>
                 <div class="flex-grow pl-4">
                   <h2 class="font-semibold title-font font-hind text-lg text-tertiary mb-1 uppercase tracking-wider">
                     DecoNetwork
                   </h2>
-                  <h2 class="font-medium title-font font-hind text-md text-primary mb-1 uppercase tracking-wider">
+                  <h2 class="font-medium title-font font-hind text-md text-footer mb-1 uppercase tracking-wider">
                     Software Support Specialist
                   </h2>
                   <p class="leading-relaxed font-hind text-md p-3">
@@ -121,14 +121,14 @@ export default function ServicesSection() {
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                 </div>
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-white relative z-10">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-footer relative z-10">
                   <User color="#e9f3ff" size={20} />
                 </div>
                 <div class="flex-grow pl-4">
                   <h2 class="font-semibold font-hind title-font text-lg text-tertiary mb-1 uppercase tracking-wider">
                     UNC Information Services
                   </h2>
-                  <h2 class="font-medium title-font font-hind text-md text-primary mb-1 uppercase tracking-wider">
+                  <h2 class="font-medium title-font font-hind text-md text-footer mb-1 uppercase tracking-wider">
                     Information Technology Technician
                   </h2>
                   <p class="leading-relaxed font-hind text-md p-3">
@@ -139,14 +139,14 @@ export default function ServicesSection() {
                 </div>
               </div>
               <div class="flex relative">
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-white relative z-10">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-backdrop inline-flex items-center justify-center text-footer relative z-10">
                   <Layers color="#e9f3ff" size={20} />
                 </div>
                 <div class="flex-grow pl-4">
                   <h2 class="font-semibold title-font font-hind text-lg text-tertiary mb-1 uppercase tracking-wider">
                     Cisco Systems Inc.
                   </h2>
-                  <h2 class="font-medium title-font font-hind text-md text-primary mb-1 uppercase tracking-wider">
+                  <h2 class="font-medium title-font font-hind text-md text-footer mb-1 uppercase tracking-wider">
                     Junior/Senior Intern (Fellowship)
                   </h2>
                   <p class="leading-relaxed font-hind text-md p-3">
