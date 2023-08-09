@@ -1,11 +1,11 @@
-/*TODO: update the alert functionality to link to your Github account 
-        and have a cooler design
-  TODO: add a small personal logo to this component         
-*/
-
 import Container from './container';
 import cn from 'classnames';
-import { Inbox, Clipboard, AtSign, Compass } from 'react-feather';
+import {
+  ChevronsRight,
+  ChevronsLeft,
+  ChevronsDown,
+  ChevronsUp,
+} from 'react-feather';
 
 export default function Alert({ preview }) {
   return (
@@ -22,7 +22,7 @@ export default function Alert({ preview }) {
               This is page is a preview.{' '}
               <a
                 href="/api/exit-preview"
-                className="underline hover:text-cyan duration-200 transition-colors"
+                className="underline transition-colors duration-200 hover:text-cyan"
               >
                 Click here
               </a>{' '}
@@ -31,22 +31,22 @@ export default function Alert({ preview }) {
           ) : (
             <>
               <div class="flex">
-                <Inbox
+                <ChevronsDown
                   class="rounded-full p-1 bg-footer border-2 border-foreground mr-1"
                   size={28}
                   color="#585858"
                 />
-                <Clipboard
+                <ChevronsLeft
                   class="rounded-full p-1 bg-footer border-2 border-foreground mr-1"
                   size={28}
                   color="#585858"
                 />
-                <AtSign
+                <ChevronsUp
                   class="rounded-full p-1 bg-footer border-2 border-foreground mr-1"
                   size={28}
                   color="#585858"
                 />
-                <Compass
+                <ChevronsRight
                   class="rounded-full p-1 bg-footer border-2 border-foreground mr-1"
                   size={28}
                   color="#585858"
